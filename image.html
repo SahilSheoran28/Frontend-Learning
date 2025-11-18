@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #f69797;
+        }
+    </style>
+    <img src="https://media.newindianexpress.com/newindianexpress%2F2025-09-16%2Fkxtmnte9%2Ftanjiro-demon.jpg?w=480&auto=format%2Ccompress&fit=max" alt="no image" srcset="">
+    <img src="./pic1.jpg" alt="no image" srcset="">
+    <picture>
+        <source media="(min-width: 500px)" srcset="./pic1.jpg">
+        <source media="(min-width: 300px)" srcset="./pic1.jpg">
+        <img src="./pic1.jpg" alt="">
+    </picture>
+    <!-- an image map generator -->
+     <img src="pic1.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="175,31,282,92" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="344,112,400,56,401,106" shape="rect">
+</map>
+<script>
+    function one(){
+    alert ("you clicked on one")
+    }
+    function two(){
+        alert ("you clicked on two")
+        }
+</script>
+</body>
+</html> 
